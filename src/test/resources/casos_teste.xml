@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suiteDeTeste>
+	<procedimento num="0" descricao="exponenciacao">
+		<caso num="0">
+			<base>8</base>
+			<expoente>2</expoente>
+			<resultadoEsperado>64</resultadoEsperado>
+		</caso>
+		<caso num="1">
+			<base>512</base>
+			<expoente>0</expoente>
+			<resultadoEsperado>1</resultadoEsperado>
+		</caso>
+		<caso num="2">
+			<base>0</base>
+			<expoente>6</expoente>
+			<resultadoEsperado>0</resultadoEsperado>
+		</caso>
+		<caso num="3">
+			<base>5</base>
+			<expoente>-4</expoente>
+			<resultadoEsperado>0,0016</resultadoEsperado>
+		</caso>
+		<caso num="4">
+			<base>a</base>
+			<expoente>2</expoente>
+			<resultadoEsperado>NaN</resultadoEsperado>
+		</caso>
+	</procedimento>
+	<procedimento num="1" descricao="radiciacao">
+		<caso num="0">
+			<radicando>9</radicando>
+			<indice>2</indice>
+			<resultadoEsperado>3</resultadoEsperado>
+		</caso>
+		<caso num="1">
+			<radicando>16</radicando>
+			<indice>0</indice>
+			<resultadoEsperado>Infinity</resultadoEsperado>
+		</caso>
+		<caso num="2">
+			<radicando>5</radicando>
+			<indice>2</indice>
+			<resultadoEsperado>2,23606797749979</resultadoEsperado>
+		</caso>
+		<caso num="3">
+			<radicando></radicando>
+			<indice></indice>
+			<resultadoEsperado>-</resultadoEsperado>
+		</caso>
+		<caso num="4">
+			<radicando>a</radicando>
+			<indice>6</indice>
+			<resultadoEsperado>NaN</resultadoEsperado>
+		</caso>
+	</procedimento>
+	<procedimento num="2" descricao="juros compostos">
+		<caso num="0">
+			<capital>1000</capital>
+			<taxa>2</taxa>
+			<numPeriodos>1</numPeriodos>
+			<resultadoEsperado>20</resultadoEsperado>
+		</caso>
+		<caso num="1">
+			<capital>1000</capital>
+			<taxa>-2</taxa>
+			<numPeriodos>1</numPeriodos>
+			<resultadoEsperado>-20</resultadoEsperado>
+		</caso>
+		<caso num="2">
+			<capital>1000</capital>
+			<taxa>2</taxa>
+			<numPeriodos>-1</numPeriodos>
+			<resultadoEsperado>-19,607843137254918</resultadoEsperado>
+		</caso>
+		<caso num="3">
+			<capital>1000,50</capital>
+			<taxa>6,5</taxa>
+			<numPeriodos>5</numPeriodos>
+			<resultadoEsperado>370,2717067473325</resultadoEsperado>
+		</caso>
+		<caso num="4">
+			<capital>-1000</capital>
+			<taxa>2</taxa>
+			<numPeriodos>1</numPeriodos>
+			<resultadoEsperado>-20</resultadoEsperado>
+		</caso>
+	</procedimento>
+</suiteDeTeste>
